@@ -1,7 +1,7 @@
 # GroupingCollectionView
 This is an implementation of  ICollectionView for Xaml GridView and ListView that automatically groups and sorts an ObservableCollection using bindable functions.  
 
-# WORK IN PROGRESS!
+## WORK IN PROGRESS!
 
 You may have noticed a dependency on files located in the "winrt" folder.  This was an attempt at writing this component using C++/WinRT
 rather than the normally required C++/CX.  However, in order to write a WinRT Component (accessible to other projects) it had to be done
