@@ -64,13 +64,8 @@ CustomCVS::GroupingCollectionView::GroupingCollectionView()
 		AttachPropertyChangedHandler(m_source);
 	}*/
 
-	m_index = 0;
-	
+	m_index = -1;
 
-	/*auto test = "testing!";
-	auto uri = winrt::Windows::Foundation::Uri(L"https://bing.com");
-	IInspectable j = uri.try_as<IInspectable>();
-	auto d = m_groupingSelector(j);*/
 }
 
 #pragma region Dependency Properties
