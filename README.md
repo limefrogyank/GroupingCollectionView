@@ -19,16 +19,20 @@ In code-behind or via binding with a `Func<object,object>`, create a function th
 
 ```
 ContactsCV.GroupingSelector = (object list) =>
-            {
-                return (list as IEnumerable<object>).Cast<Contact>().GroupBy(x => x.LastName.Substring(0, 1).ToUpper()).OrderBy(x => x.Key).ToList();
-            };
+    {
+        return (list as IEnumerable<object>)
+            .Cast<Contact>()
+            .GroupBy(x => x.LastName.Substring(0, 1)
+            .ToUpper()).OrderBy(x => x.Key)
+            .ToList();
+    };
 ```
 
 #### ItemSortFunction Property
 
 ```
  ContactsCV.ItemSortFunction = (object a, object b) =>
-            {
-                return (a as Contact).FirstName.CompareTo((b as Contact).FirstName);
-            };
+     {
+         return (a as Contact).FirstName.CompareTo((b as Contact).FirstName);
+     };
 ```
